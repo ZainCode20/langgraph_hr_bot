@@ -22,7 +22,7 @@ questions = [
 llm = ChatGroq(
     model="llama-3.3-70b-versatile", # Using a common model name
     temperature=0.5,
-    api_key=st.secrets["GROQ_API_KEY"]
+    api_key=st.secrets["auth_token"]
 )
 
 # --- Streamlit Session State Initialization ---
